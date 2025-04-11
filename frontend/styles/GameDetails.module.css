@@ -1,0 +1,98 @@
+/* styles/GameDetails.module.css */
+.gameDetails {
+  background-color: #172431;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gameHeader {
+  padding: 20px;
+  border-bottom: 1px solid #2a3c4d;
+}
+
+.gameHeader h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.gameContent {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.gameImageContainer {
+  position: relative;
+}
+
+.gameImage {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gameActions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.downloadButton {
+  display: block;
+  background-color: #4df0ff;
+  color: #0f1923;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.downloadButton:hover {
+  background-color: #36b6c0;
+}
+
+.infoSection {
+  margin-bottom: 25px;
+}
+
+.infoSection h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #4df0ff;
+}
+
+.detailsList {
+  list-style: none;
+}
+
+.detailsList li {
+  margin-bottom: 10px;
+}
+
+.systemRequirements {
+  background-color: #1e2e3d;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.systemRequirements ul {
+  list-style: none;
+}
+
+.systemRequirements li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .gameContent {
+    grid-template-columns: 1fr;
+  }
+  
+  .gameImageContainer {
+    margin-bottom: 20px;
+  }
+}
