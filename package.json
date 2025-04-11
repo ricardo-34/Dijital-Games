@@ -1,0 +1,11 @@
+{
+    "name": "dijital-games",
+    "version": "1.0.0",
+    "scripts": {
+      "build": "cd frontend && npm install && npm run build",
+      "start": "npm run start:frontend && npm run start:backend",
+      "start:frontend": "cd frontend && npm install",
+      "start:backend": "cd backend && npm install && node server.js"
+    }
+  }
+  
